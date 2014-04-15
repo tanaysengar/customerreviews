@@ -48,9 +48,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'customerreview1.urls'
+ROOT_URLCONF = 'customerreview.urls'
 
-WSGI_APPLICATION = 'customerreview1.wsgi.application'
+WSGI_APPLICATION = 'customerreview.wsgi.application'
 
 
 # Database
