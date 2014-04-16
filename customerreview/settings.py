@@ -1,5 +1,5 @@
 """
-Django settings for customerreview1 project.
+Django settings for customerreview project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
+
+SITE_ROOT = os.path.dirname(PROJECT_ROOT)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -37,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'customerreview',
+    'fileupload',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -58,8 +62,11 @@ WSGI_APPLICATION = 'customerreview.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'CustomerReview',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': ''
     }
 }
 
@@ -81,3 +88,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_ROOT = os.path.join(SITE_ROOT,'media/')
+MEDIA_URL='/media/'
+
+TEMPLATE_DIRS = (
+    os.path.join(SITE_ROOT, 'templates'),
+)
