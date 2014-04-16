@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'customerreview',
     'fileupload',
+    'main',
 )
 
 MIDDLEWARE_CLASSES = (
