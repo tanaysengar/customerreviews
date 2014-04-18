@@ -7,6 +7,8 @@ from fileupload.models import Document
 from fileupload.forms import DocumentForm
 
 import csv
+import os
+from django.conf import settings
 
 from main.models import UPC
 
@@ -17,25 +19,36 @@ def list(request):
         if form.is_valid():
             newdoc = Document(docfile = request.FILES['docfile'])
             newdoc.save()
-            handle_file(request.FILES['docfile'].file)
-            return HttpResponseRedirect('list.html')
+            print(newdoc.docfile)
+            handle_file(newdoc.docfile)
+            return HttpResponseRedirect('uploadedcontent.html')
     else:
         form = DocumentForm()
-
         documents = Document.objects.all()
 
         return render_to_response('list.html',
-            {'document':documents,
+            {'documents':documents,
              'form': form
             },
             context_instance=RequestContext(request)
-
         )
 
-def handle_file(dataFile):
-    reader = csv.DictReader(open(dataFile))
 
-    for row in reader:
-        upccode = UPC()
-        upccode.code = row[0]
-        upccode.save()
+def handle_file(dataFile):
+    #reader = csv.DictReader(open(os.path.join(SITE_ROOT,dataFile))
+
+    #dataReader = csv.reader(open('/Users/tanaysengar/Programming/PythonProjects/customerreview/media/document/2014/04/18/Workbook3_3.csv'),
+    #                        delimiter=',',
+    #                       quotechar='"')
+
+    filepath = dataFile.path
+
+    print filepath
+
+    dataReader = csv.reader(open(filepath,"rU"),delimiter=',',quotechar='"')
+
+    for row in dataReader:
+        if row[0] != 'UPC':
+            upccode = UPC()
+            upccode.code = row[0]
+            upccode.save()
