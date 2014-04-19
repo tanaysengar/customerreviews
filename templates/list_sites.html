@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body_block %}
+<div align="left">
+    {% if lookup_sites %}
+        <ul class="list-group">
+        {% for sites in lookup_sites %}
+             <li class="list-group-item">{{ sites.sitename }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No documents.</p>
+    {% endif %}
+
+
+{% endblock %}
