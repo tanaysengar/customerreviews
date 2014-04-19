@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d2e8990-f4c2-4f48-8668-99e49971df20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base_bootstrap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/list_upc.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/load_upc.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/list.html" afterPath="$PROJECT_DIR$/templates/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customerreview/settings.py" afterPath="$PROJECT_DIR$/customerreview/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery-1.11.0.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customerreview/urls.py" afterPath="$PROJECT_DIR$/customerreview/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fileupload/views.py" afterPath="$PROJECT_DIR$/fileupload/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/views.py" afterPath="$PROJECT_DIR$/main/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="customerreview.iws" />
@@ -47,19 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.56390977" vertical-offset="345" max-vertical-offset="1005">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fluid.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/fluid.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="0" selection-start="0" selection-end="1821" vertical-scroll-proportion="-13.833333" vertical-offset="613" max-vertical-offset="1035">
+            <state line="61" column="0" selection-start="1699" selection-end="1699" vertical-scroll-proportion="-24.375" vertical-offset="330" max-vertical-offset="1005">
               <folding />
             </state>
           </provider>
@@ -74,53 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fluid_old.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/fluid_old.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2295">
-              <folding>
-                <marker date="1397858356000" expanded="true" signature="33:6428" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="42:992" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="384:745" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="397:463" placeholder="{...}" />
-                <marker date="1397858356000" expanded="true" signature="483:516" placeholder="{...}" />
-                <marker date="1397858356000" expanded="true" signature="550:733" placeholder="{...}" />
-                <marker date="1397858356000" expanded="true" signature="632:725" placeholder="{...}" />
-                <marker date="1397858356000" expanded="true" signature="896:979" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="1002:6420" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="1060:1910" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="1093:1899" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="1131:1886" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="1238:1387" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="1486:1849" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="1533:1622" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="1651:1832" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="1945:6107" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="1975:6005" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="2003:2883" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="2044:2854" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="2082:2837" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="2923:5980" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="2957:3333" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="3367:4638" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="3399:3773" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="3817:4191" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="4235:4609" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="4683:5954" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="4715:5089" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="5133:5507" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="5551:5925" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="6044:6095" placeholder="..." />
-                <marker date="1397858356000" expanded="true" signature="6142:6212" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/customerreview/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+            <state line="18" column="0" selection-start="465" selection-end="465" vertical-scroll-proportion="0.47085202" vertical-offset="0" max-vertical-offset="446">
               <folding />
             </state>
           </provider>
@@ -191,11 +120,11 @@
         <option value="$PROJECT_DIR$/main/views.py" />
         <option value="$PROJECT_DIR$/static/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/fileupload/views.py" />
-        <option value="$PROJECT_DIR$/customerreview/urls.py" />
         <option value="$PROJECT_DIR$/templates/fluid.html" />
         <option value="$PROJECT_DIR$/templates/list_upc.html" />
         <option value="$PROJECT_DIR$/templates/list.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/customerreview/urls.py" />
       </list>
     </option>
   </component>
@@ -660,7 +589,11 @@
       <created>1397841496796</created>
       <updated>1397841496796</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changes for file upload">
+      <created>1397878828280</created>
+      <updated>1397878828280</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -871,54 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fluid_old.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
-          <folding>
-            <marker date="1397858356000" expanded="true" signature="33:6428" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="42:992" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="384:745" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="397:463" placeholder="{...}" />
-            <marker date="1397858356000" expanded="true" signature="483:516" placeholder="{...}" />
-            <marker date="1397858356000" expanded="true" signature="550:733" placeholder="{...}" />
-            <marker date="1397858356000" expanded="true" signature="632:725" placeholder="{...}" />
-            <marker date="1397858356000" expanded="true" signature="896:979" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="1002:6420" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="1060:1910" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="1093:1899" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="1131:1886" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="1238:1387" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="1486:1849" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="1533:1622" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="1651:1832" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="1945:6107" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="1975:6005" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="2003:2883" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="2044:2854" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="2082:2837" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="2923:5980" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="2957:3333" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="3367:4638" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="3399:3773" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="3817:4191" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="4235:4609" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="4683:5954" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="4715:5089" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="5133:5507" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="5551:5925" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="6044:6095" placeholder="..." />
-            <marker date="1397858356000" expanded="true" signature="6142:6212" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fluid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="0" selection-end="1821" vertical-scroll-proportion="-13.833333" vertical-offset="613" max-vertical-offset="1035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
@@ -942,13 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/customerreview/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/list_upc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="41" selection-start="172" selection-end="200" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="315">
@@ -965,7 +843,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.56390977" vertical-offset="345" max-vertical-offset="1005">
+        <state line="61" column="0" selection-start="1699" selection-end="1699" vertical-scroll-proportion="-24.375" vertical-offset="330" max-vertical-offset="1005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customerreview/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="465" selection-end="465" vertical-scroll-proportion="0.47085202" vertical-offset="0" max-vertical-offset="446">
           <folding />
         </state>
       </provider>
