@@ -13,5 +13,6 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^list/', 'fileupload.views.list', name='list'),
-
+    url(r'^list_upc/', 'main.views.list_upc', name='list_upc'),
+    url(r'^fluid/', 'main.views.fluid', name='fluid'),
 )

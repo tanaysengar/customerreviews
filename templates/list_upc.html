@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body_block %}
+<div align="left">
+    {% if upc_codes %}
+        <ul class="list-group">
+        {% for upc in upc_codes %}
+             <li class="list-group-item">{{ upc.code }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No documents.</p>
+    {% endif %}
+
+
+{% endblock %}

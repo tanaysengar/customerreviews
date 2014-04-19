@@ -21,7 +21,7 @@ def list(request):
             newdoc.save()
             print(newdoc.docfile)
             handle_file(newdoc.docfile)
-            return HttpResponseRedirect('uploadedcontent.html')
+            return HttpResponseRedirect('/list_upc')
     else:
         form = DocumentForm()
         documents = Document.objects.all()
