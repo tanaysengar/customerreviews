@@ -15,4 +15,5 @@ urlpatterns = patterns('',
     url(r'^list/', 'fileupload.views.list', name='list'),
     url(r'^list_upc/', 'main.views.list_upc', name='list_upc'),
     url(r'^list_sites/', 'main.views.list_sites', name='list_sites'),
+    url(r'^upc_reviews/(?P<code>\w{0,50})/$', 'main.views.upc_reviews', name='upc_reviews'),
 )

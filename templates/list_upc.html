@@ -3,11 +3,21 @@
 {% block body_block %}
 <div align="left">
     {% if upc_codes %}
-        <ul class="list-group">
-        {% for upc in upc_codes %}
-             <li class="list-group-item">{{ upc.code }}</li>
-        {% endfor %}
-        </ul>
+
+        <table class="table table-hover">
+            <thead>
+                <tr><th>Code</th><th>Name</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+            {% for upc in upc_codes %}
+                 <tr>
+                    <td><a href="/upc_reviews/{{ upc.id }}"> {{ upc.code }} </a></td>
+                    <td>{{ upc.name }}</td>
+                    <td>{{ upc.description }}</td>
+            {% endfor %}
+            </tbody>
+        </table>
+
     {% else %}
         <p>No documents.</p>
     {% endif %}
