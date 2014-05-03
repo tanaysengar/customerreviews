@@ -16,6 +16,7 @@ class UPC(models.Model):
 
 class CustomerReviews(models.Model):
     review = models.CharField(max_length=2000)
+    review_title = models.CharField(max_length=50)
     upc = models.ForeignKey(UPC)
     lookupsite=models.ForeignKey(LookupSites)
 

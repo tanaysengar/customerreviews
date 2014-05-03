@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d2e8990-f4c2-4f48-8668-99e49971df20" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/list_upc.html" afterPath="$PROJECT_DIR$/templates/list_upc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/models.py" afterPath="$PROJECT_DIR$/main/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/upc_reviews.html" afterPath="$PROJECT_DIR$/templates/upc_reviews.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/views.py" afterPath="$PROJECT_DIR$/main/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="customerreview.iws" />
@@ -41,24 +42,36 @@
         <entry file="file://$PROJECT_DIR$/templates/list_sites.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="15" column="14" selection-start="345" selection-end="345" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="315">
-              <folding />
+              <folding>
+                <marker date="1397879612000" expanded="true" signature="67:330" placeholder="..." />
+                <marker date="1397879612000" expanded="true" signature="125:267" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_upc.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="list_upc.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/list_upc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="465">
+            <state line="8" column="70" selection-start="225" selection-end="225" vertical-scroll-proportion="0.1863354" vertical-offset="0" max-vertical-offset="644">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upc_reviews.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="upc_reviews.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/upc_reviews.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.68938196" vertical-offset="75" max-vertical-offset="945">
+            <state line="63" column="71" selection-start="2336" selection-end="2336" vertical-scroll-proportion="-17.5" vertical-offset="525" max-vertical-offset="1290">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="49" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
               <folding />
             </state>
           </provider>
@@ -113,11 +126,11 @@
         <option value="$PROJECT_DIR$/templates/list.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/list_sites.html" />
-        <option value="$PROJECT_DIR$/main/models.py" />
         <option value="$PROJECT_DIR$/customerreview/urls.py" />
-        <option value="$PROJECT_DIR$/templates/list_upc.html" />
         <option value="$PROJECT_DIR$/main/views.py" />
+        <option value="$PROJECT_DIR$/main/models.py" />
         <option value="$PROJECT_DIR$/templates/upc_reviews.html" />
+        <option value="$PROJECT_DIR$/templates/list_upc.html" />
       </list>
     </option>
   </component>
@@ -534,7 +547,11 @@
       <created>1399073461395</created>
       <updated>1399073461395</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add more changes">
+      <created>1399135465770</created>
+      <updated>1399135465770</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -863,13 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="9" selection-start="414" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/customerreview/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
@@ -884,13 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/list_upc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="23" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1020">
@@ -901,7 +904,10 @@
     <entry file="file://$PROJECT_DIR$/templates/list_sites.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="14" selection-start="345" selection-end="345" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="315">
-          <folding />
+          <folding>
+            <marker date="1397879612000" expanded="true" signature="67:330" placeholder="..." />
+            <marker date="1397879612000" expanded="true" signature="125:267" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -921,9 +927,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="49" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/upc_reviews.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.68938196" vertical-offset="75" max-vertical-offset="945">
+        <state line="63" column="71" selection-start="2336" selection-end="2336" vertical-scroll-proportion="-17.5" vertical-offset="525" max-vertical-offset="1290">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/list_upc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="70" selection-start="225" selection-end="225" vertical-scroll-proportion="0.1863354" vertical-offset="0" max-vertical-offset="644">
           <folding />
         </state>
       </provider>
