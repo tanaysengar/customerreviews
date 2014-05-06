@@ -4,6 +4,7 @@ from django.template import RequestContext
 from main.models import UPC, LookupSites, CustomerReviews
 from forms import CustomerReviewForm
 from django.http import HttpResponseRedirect
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def list_upc(request):
     upc_codes = UPC.objects.all()
@@ -19,17 +20,29 @@ def upc_reviews(request,code):
 
     currentsiteid='All'
 
+    new_review = CustomerReviewForm()
+
+    lookup_sites = LookupSites.objects.all()
+
     if ('lookupsiteid' in request.GET) and (request.GET['lookupsiteid'] !='All'):
         reviews = CustomerReviews.objects.filter(upc_id=upc_details.id).filter(lookupsite_id=request.GET['lookupsiteid'])
         currentsiteid = request.GET['lookupsiteid']
     else:
         reviews = CustomerReviews.objects.filter(upc_id=upc_details.id)
 
-    new_review = CustomerReviewForm()
+    paginator = Paginator(reviews, 3)
+    page = request.GET.get('page')
 
-    lookup_sites = LookupSites.objects.all()
+    try:
+        reviews_list = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        reviews_list = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        reviews_list = paginator.page(paginator.num_pages)
 
-    return render_to_response('upc_reviews.html',{'reviews':reviews,
+    return render_to_response('upc_reviews.html',{'reviews':reviews_list,
                                                   'product':upc_details,
                                                   'lookupsites':lookup_sites,
                                                    'code':code,
