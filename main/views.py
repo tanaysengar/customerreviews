@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from main.models import UPC, LookupSites, CustomerReviews
+from forms import CustomerReviewForm
+from django.http import HttpResponseRedirect
 
 def list_upc(request):
     upc_codes = UPC.objects.all()
@@ -23,6 +25,7 @@ def upc_reviews(request,code):
     else:
         reviews = CustomerReviews.objects.filter(upc_id=upc_details.id)
 
+    new_review = CustomerReviewForm()
 
     lookup_sites = LookupSites.objects.all()
 
@@ -30,6 +33,23 @@ def upc_reviews(request,code):
                                                   'product':upc_details,
                                                   'lookupsites':lookup_sites,
                                                    'code':code,
-                                                   'currentsiteid':currentsiteid
+                                                   'currentsiteid':currentsiteid,
+                                                   'new_review': new_review
                                                   },
                               context_instance=RequestContext(request))
+
+def add_review(request):
+    if request.method == 'POST':
+        form = CustomerReviewForm(request.POST)
+        if form.is_valid():
+            new_review = form.save(commit=False)
+            code = request.POST['code']
+            new_review.upc= UPC.objects.get(pk=code)
+            new_review.lookupsite = LookupSites.objects.get(pk=4)
+            new_review.save()
+    else:
+        form=CustomerReviewForm()
+
+    redirect_url = "/upc_reviews/" + request.POST['code']
+
+    return HttpResponseRedirect(redirect_url)

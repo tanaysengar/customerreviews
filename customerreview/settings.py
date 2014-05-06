@@ -99,3 +99,5 @@ MEDIA_URL='/media/'
 TEMPLATE_DIRS = (
     os.path.join(SITE_ROOT, 'templates'),
 )
+
+CUSTOMER_REVIEW_ID = 4
