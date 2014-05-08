@@ -5,6 +5,7 @@ from main.models import UPC, LookupSites, CustomerReviews
 from forms import CustomerReviewForm
 from django.http import HttpResponseRedirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.contrib import messages
 
 def list_upc(request):
     upc_codes = UPC.objects.all()
@@ -54,12 +55,12 @@ def upc_reviews(request,code):
 def add_review(request):
     if request.method == 'POST':
         form = CustomerReviewForm(request.POST)
-        if form.is_valid():
-            new_review = form.save(commit=False)
-            code = request.POST['code']
-            new_review.upc= UPC.objects.get(pk=code)
-            new_review.lookupsite = LookupSites.objects.get(pk=4)
-            new_review.save()
+        new_review = form.save(commit=False)
+        code = request.POST['code']
+        new_review.upc= UPC.objects.get(pk=code)
+        new_review.lookupsite = LookupSites.objects.get(pk=4)
+        new_review.save()
+        messages.add_message(request, messages.INFO, 'Your review has been added. Thank you.')
     else:
         form=CustomerReviewForm()
 

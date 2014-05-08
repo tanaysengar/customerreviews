@@ -3,11 +3,18 @@
 {% block body_block %}
 <div align="left">
     {% if lookup_sites %}
-        <ul class="list-group">
-        {% for sites in lookup_sites %}
-             <li class="list-group-item">{{ sites.sitename }}</li>
-        {% endfor %}
-        </ul>
+        <table class="table table-hover">
+            <thead>
+                <tr><th>Site Name</th><!--th>Description</th--></tr>
+            </thead>
+            <tbody>
+            {% for sites in lookup_sites %}
+                 <tr>
+                    <td>{{ sites.sitename }}</td>
+            {% endfor %}
+            </tbody>
+        </table>
+
     {% else %}
         <p>No documents.</p>
     {% endif %}

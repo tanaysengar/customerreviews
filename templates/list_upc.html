@@ -5,15 +5,16 @@
     {% if upc_codes %}
 
         <table class="table table-hover">
-            <thead>
+            <!--thead>
                 <tr><th>Code</th><th>Name</th><!--th>Description</th--></tr>
-            </thead>
+            </thead-->
             <tbody>
             {% for upc in upc_codes %}
                  <tr>
-                    <td><a href="/upc_reviews/{{ upc.id }}"> {{ upc.code }} </a></td>
-                    <td>{{ upc.name }}</td>
-                    <!--td>{{ upc.description }}</td-->
+                    <td><a href="/upc_reviews/{{ upc.id }}"> {{ upc.code }} </a><br/>
+                    {{ upc.name }}<br/>
+                    {{ upc.description }}
+                 </td>
             {% endfor %}
             </tbody>
         </table>

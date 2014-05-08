@@ -14,11 +14,19 @@
         </form>
 <div align="left">
 {% if documents %}
-         <ul class="list-group">
-        {% for document in documents %}
-            <li class="list-group-item"><a href="{{ document.docfile.url }}">{{ document.docfile.name }}</a></li>
-        {% endfor %}
-        </ul>
+       <table class="table table-hover">
+            <thead>
+                <tr><th>File Names</th><!--th>Description</th--></tr>
+            </thead>
+            <tbody>
+             {% for document in documents %}
+                 <tr>
+                    <td><a href="{{ document.docfile.url }}">{{ document.docfile.name }}</a></td>
+            {% endfor %}
+            </tbody>
+        </table>
+
+
     {% else %}
         <p>No documents.</p>
     {% endif %}
